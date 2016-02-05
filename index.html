@@ -30,6 +30,23 @@ blah, blah, blah, blah
       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      
+      <script>
+      	var allergy_count=0;
+      	var cold_count=0;
+      	//Declared and initialized variables
+      	
+      	function allergyAdd(){
+      		allergy_count=allergy_count+1;
+      	}
+      	
+      	function coldAdd(){
+      		cold_count=cold_count+1;
+      	}
+      	//created function for variables
+      	
+      </script>
+      
    </head> 
    
    <body> 
@@ -41,6 +58,9 @@ blah, blah, blah, blah
 	
 	<div data-role="content">	
 		<p>Hello World! Molly Aldred is here.</p>
+		<p>Start the Cold vs. Allergy Survey!</p>
+		<a href="#pagetwo" data-role="button">Go to Page Two</a>
+		<!--/ created a button to take them to the actual first question on page 2 -->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
@@ -118,23 +138,36 @@ blah, blah, blah, blah
 	
 	<div data-role="content">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#pagesix" on click="allergyAdd();"data-role="button">Yes</a>
-		<a href="#pagesix" on click="coldAdd();"data-role="button">No</a>
-			<!-- /question on page 5 sent to page six -->
-		<a href="#pagesix">Go to Page Five</a></a>
-			<!-- /answer on page 5 sent to page 6 -->
+		<a href="#results" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#results" on click="coldAdd();"data-role="button">No</a>
+			<!-- /question on page 5 sent to results page -->
+		<a href="#results">Go to Results</a></a>
+			<!-- /answer on page 5 sent to results page -->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
 		<p>This is the footer!</p>
 	</div><!-- /footer -->
 	
-	
-	<div data-role="page" id="pagesix">
+
+	<div data-role="page" id="results">
+		
 	<div data-role="header"> 
 		<h1>My Hello World App!</h1>
 	</div><!-- /header -->
 	
+	<p id="results"></p>
+			<!--/declaring the page -->
+		<script>
+			resultText.innerHTML="Probability it is allergies = " + allergyPercent + "<br>Probability it is a cold = "+ coldPercent;
+			//will hopefully get the results and then print it by changing the HTML Content
+		</script>
+	
+	<div data-role="content">
+		
+		var resultsText=document.getElementByld("results");
+			<!-- /get overall results --> 
+			
 	<div data-role="footer" data-position="fixed">
 		<p>This is the footer!</p>
 	</div><!-- /footer -->
