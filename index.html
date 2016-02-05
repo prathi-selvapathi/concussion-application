@@ -34,18 +34,105 @@ blah, blah, blah, blah
    
    <body> 
 
-     <div data-role="page">
+     <div data-role="page" id="pageone">
 	<div data-role="header">
 		<h1>My Hello World App!</h1>
 	</div><!-- /header -->
-
+	
 	<div data-role="content">	
-		<p>Hello World! (Your name) is here.</p>		
+		<p>Hello World! Molly Aldred is here.</p>
 	</div><!-- /content -->
-
+	
 	<div data-role="footer" data-position="fixed">
 		<p>This is the footer!</p>
 	</div><!-- /footer -->
+
+	
+	
+     <div data-role="page" id="pagetwo">
+	<div data-role="header"> 
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Are your eyes watery or itchy?</p>
+		<a href="#pagethree" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#pagethree" on click="coldAdd();"data-role="button">No</a>
+		<a href="#pagethree">Go to Page Three</a></a>
+	
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>This is the footer!</p>
+		<a href="#pagethree">Go to Page Three</a></a>
+	</div><!-- /footer -->
+	
+	
+       <div data-role="page" id="pagethree">
+	<div data-role="header"> 
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Do you have a fever?</p>
+		<a href="#pagefour" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagefour" on click="allergyAdd();"data-role="button">No</a>
+		<a href="#pagefour">Go to Page Four</a></a>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>This is the footer!</p>
+	</div><!-- /footer -->
+	
+	
+	
+	
+       <div data-role="page" id="pagefour">
+	<div data-role="header"> 
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Do you have a sore throat?</p>
+		<a href="#pagefive" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagefive" on click="allergyAdd();"data-role="button">No</a>
+		<a href="#pagefive">Go to Page Five</a></a>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>This is the footer!</p>
+	</div><!-- /footer -->
+	
+	
+	
+	
+      <div data-role="page" id="pagefive">
+	<div data-role="header"> 
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Are your symptoms seasonal or chronic?</p>
+		<a href="#pagesix" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#pagesix" on click="coldAdd();"data-role="button">No</a>
+		<a href="#pagesix">Go to Page Five</a></a>
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>This is the footer!</p>
+	</div><!-- /footer -->
+	
+	
+	<div data-role="page" id="pagesix">
+	<div data-role="header"> 
+		<h1>My Hello World App!</h1>
+	</div><!-- /header -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>This is the footer!</p>
+	</div><!-- /footer -->
+	
+	
      </div><!-- /page -->
    </body>
 </html>
