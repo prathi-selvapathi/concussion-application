@@ -59,29 +59,12 @@ blah, blah, blah, blah
 	<div data-role="content">	
 		<p>Hello World! Molly Aldred is here.</p>
 		<p>Start the Cold vs. Allergy Survey!</p>
-		<a href="#pagetwo" data-role="button">Go to Page Two</a>
-			<!--/ created a button to take them to the actual first question on page 2 -->
-		<a href="#pagetwo">Go to Page Two</a></a>
-			<!--/ created another line of code to take them to page 2 because the above line didn't, but a button did show -->
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>This is the footer!</p>
-	</div><!-- /footer -->
-
-	
-	
-     <div data-role="page" id="pagetwo">
-	<div data-role="header"> 
-		<h1>My Hello World App!</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
+	<!--/letting the use know what they are about to do -->
 		<p>Are your eyes watery or itchy?</p>
-		<a href="#pagethree" on click="allergyAdd();"data-role="button">Yes</a>
-		<a href="#pagethree" on click="coldAdd();"data-role="button">No</a>
+		<a href="#pagetwo" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#pagetwo" on click="coldAdd();"data-role="button">No</a>
 		<!-- /question on page two sent to page three --> 
-		<a href="#pagethree">Go to Page Three</a></a>
+		<a href="#pagetwo">Go to Page Two</a></a>
 		<!-- /answer from page two sent to page three --> 
 	</div><!-- /content -->
 	
@@ -91,17 +74,17 @@ blah, blah, blah, blah
 	</div><!-- /footer -->
 	
 	
-       <div data-role="page" id="pagethree">
+       <div data-role="page" id="pagetwo">
 	<div data-role="header"> 
 		<h1>My Hello World App!</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">
 		<p>Do you have a fever?</p>
-		<a href="#pagefour" on click="coldAdd();"data-role="button">Yes</a>
-		<a href="#pagefour" on click="allergyAdd();"data-role="button">No</a>
+		<a href="#pagethree" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagethree" on click="allergyAdd();"data-role="button">No</a>
 			<!-- /question on page 3 sent to page 4 -->
-		<a href="#pagefour">Go to Page Four</a></a>
+		<a href="#pagethree">Go to Page Three</a></a>
 			<!-- /answer on page 3 sent to page 4 -->
 	</div><!-- /content -->
 	
@@ -112,17 +95,17 @@ blah, blah, blah, blah
 	
 	
 	
-       <div data-role="page" id="pagefour">
+       <div data-role="page" id="pagethree">
 	<div data-role="header"> 
 		<h1>My Hello World App!</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">
 		<p>Do you have a sore throat?</p>
-		<a href="#pagefive" on click="coldAdd();"data-role="button">Yes</a>
-		<a href="#pagefive" on click="allergyAdd();"data-role="button">No</a>
+		<a href="#pagefour" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagefour" on click="allergyAdd();"data-role="button">No</a>
 			<!-- /question on page 4 sent to page 5 -->
-		<a href="#pagefive">Go to Page Five</a></a>
+		<a href="#pagefour">Go to Page Four</a></a>
 			<!-- /answer on page 4 sent to page 5 -->
 	</div><!-- /content -->
 	
@@ -133,7 +116,7 @@ blah, blah, blah, blah
 	
 	
 	
-      <div data-role="page" id="pagefive">
+      <div data-role="page" id="pagefour">
 	<div data-role="header"> 
 		<h1>My Hello World App!</h1>
 	</div><!-- /header -->
