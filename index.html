@@ -32,20 +32,39 @@ blah, blah, blah, blah
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
       
       
-   </head> 
    
-   <body> 
+     <script>
+     	var allergy_count=0;
+     	var cold_count=0;
+     	//Declared and initialized variables
+     	
+     	function allergyAdd(){
+     		allergy_count=allergy_count+1;
+     	}
+     	
+     	function coldAdd(){
+     		cold_count=cold_count+1;
+     	}
+     	//created function for variables
+     	
+     </script>
+    
+  </head>
+ 
+  <body>
 
-     <div data-role="page" id="pageone">
+
+
+    <div data-role="page" id="pageone">
 	<div data-role="header">
 		<h1>Cold vs. Allergy Survey</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">	
-		<p>Cold vs. Allergy Survey!</p>
-			<!--/letting the user know what they are about to do -->
-		<a href="#pagetwo">Go to Page Two</a>	
-			<!--button to take them to the first question on page 2-->
+		<p>Start the Cold vs. Allergy Survey!</p>
+			<!--/letting the use know what they are about to do -->
+		<a href="#pagetwo" data-role="button">Go to Page Two</a>	
+			<!--created a button to take them to the first question on page 2-->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
@@ -54,25 +73,114 @@ blah, blah, blah, blah
 	
 			
 		
-      <div data-role="page" id="pagetwo">
-      	<!--/Created page 2 -->
+     <div data-role="page" id="pagetwo">
 	<div data-role="header">
 		<h1>Question 1</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">		
+			
 		<p>Are your eyes watery or itchy?</p>
 			<!--/asking first question -->
-		<a href="pageone">Go to Page One</a>
-			<!--/button to take them to page 1 -->
-	
+		<a href="#pagethree" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#pagethree" on click="coldAdd();"data-role="button">No</a>
+			<!-- /question on page two sent to page three -->
+		<a href="#pagethree">Go to Page Three</a></a>
+			<!-- /answer from page two sent to page three -->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
 		<p>Page 2</p>
 	</div><!-- /footer -->
 	
+	
+      <div data-role="page" id="pagethree">
+	<div data-role="header">
+		<h1>Question 2</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Do you have a fever?</p>
+		<a href="#pagefour" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagefour" on click="allergyAdd();"data-role="button">No</a>
+			<!-- /question on page 3 sent to page 4 -->
+		<a href="#pagefour">Go to Page Four</a></a>
+			<!-- /answer on page 3 sent to page 4 -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>Page 3</p>
+	</div><!-- /footer -->
+	
+	
+	
+	
+      <div data-role="page" id="pagefour">
+	<div data-role="header">
+		<h1>Question 3</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Do you have a sore throat?</p>
+		<a href="#pagefive" on click="coldAdd();"data-role="button">Yes</a>
+		<a href="#pagefive" on click="allergyAdd();"data-role="button">No</a>
+			<!-- /question on page 4 sent to page 5 -->
+		<a href="#pagefive">Go to Page Five</a></a>
+			<!-- /answer on page 4 sent to page 5 -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>Page 4</p>
+	</div><!-- /footer -->
+	
+	
+	
+	
+     <div data-role="page" id="pagefive">
+	<div data-role="header">
+		<h1>Question 4</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Are your symptoms seasonal or chronic?</p>
+		<a href="#results" on click="allergyAdd();"data-role="button">Yes</a>
+		<a href="#results" on click="coldAdd();"data-role="button">No</a>
+			<!-- /question on page 5 sent to results page -->
+		<a href="#results">Go to Results</a></a>
+			<!-- /answer on page 5 sent to results page -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>Page 5</p>
+	</div><!-- /footer -->
+	
 
-     </div><!-- /page -->
-   </body>
+
+
+	<div data-role="page" id="results">
+		
+	<div data-role="header">
+		<h1>Results</h1>
+	</div><!-- /header -->
+	
+	<p id="results"></p>
+			<!--/declaring the page -->
+		<script>
+			resultText.innerHTML="Probability it is allergies = " + allergyPercent + "<br>Probability it is a cold = "+ coldPercent;
+			//will hopefully get the results and then print it by changing the HTML Content
+		</script>
+	
+	<div data-role="content">
+		
+		var resultsText=document.getElementByld("results");
+			<!-- /get overall results -->
+			
+	<div data-role="footer" data-position="fixed">
+		<p>Page 6</p>
+	</div><!-- /footer -->
+		<!-- /using page 6 as a way to end the code because I didn't know what to do with the answers send from page 5 to 6 -->
+	
+	
+    </div><!-- /page -->
+  </body>
 </html>
