@@ -48,8 +48,8 @@ blah, blah, blah, blah
      	//created function for variables
      	function result(){
      		var resultText = document.getElementById("result");
-     		var allergyPercent=allergy_count/4*100;
-     		var coldPercent=cold_count/4*100;
+     		var allergyPercent=allergy_count/6*100;
+     		var coldPercent=cold_count/6*100;
      		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
      	}//function calculates the allergy and cold percentage
      	
@@ -160,16 +160,56 @@ blah, blah, blah, blah
 		<a href="#pageresults" onclick="allergyAdd();"data-role="button">Yes</a>
 		<a href="#pageresults" onclick="coldAdd();"data-role="button">No</a>
 			<!-- /question on page 5 sent to results page -->
+		<a href="#pagesix">Go to Page 6</a></a>
+			<!-- /answer on page 5 sent to results page -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>Page 6</p>
+	</div><!-- /footer -->
+	</div><!--/ end of page 6 -->
+	
+	
+
+	<div data-role="page" id="pagesix">
+	<div data-role="header">
+		<h1>Question 5</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Are you achey?</p>
+		<a href="#pageseven" onclick="coldAdd();"data-role="button">Yes</a>
+		<a href="#pageseven" onclick="allergyAdd();"data-role="button">No</a>
+			<!-- /question on page 5 sent to results page -->
+		<a href="#pageseven">Go to Page 7</a></a>
+			<!-- /answer on page 5 sent to results page -->
+	</div><!-- /content -->
+	
+	<div data-role="footer" data-position="fixed">
+		<p>Page 7</p>
+	</div><!-- /footer -->
+	</div><!--/ end of page 6 -->
+	
+	
+	<div data-role="page" id="pageseven">
+	<div data-role="header">
+		<h1>Question 6</h1>
+	</div><!-- /header -->
+	
+	<div data-role="content">
+		<p>Is your nasal discharge green or yellow?</p>
+		<a href="#pageresults" onclick="coldAdd();"data-role="button">Yes</a>
+		<a href="#pageresults" onclick="allergyAdd();"data-role="button">No</a>
+			<!-- /question on page 5 sent to results page -->
 		<a href="#pageresults">Go to Results</a></a>
 			<!-- /answer on page 5 sent to results page -->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
-		<p>Page 5</p>
+		<p>Page 7</p>
 	</div><!-- /footer -->
-	</div><!--/ end of page 5 -->
-
-
+	</div><!--/ end of page 7 -->
+	
 
 	<div data-role="page" id="pageresults">
 		
@@ -186,7 +226,7 @@ blah, blah, blah, blah
 	</div><!-- /content -->	
 			
 	<div data-role="footer" data-position="fixed">
-		<p>Page 6</p>
+		<p>Page 8</p>
 	</div><!-- /footer -->
 		<!-- /using page 6 as a way to end the code because I didn't know what to do with the answers send from page 5 to 6 -->
 	</div><!--/ end of results page -->
