@@ -46,7 +46,18 @@ blah, blah, blah, blah
      		cold_count=cold_count+1;
      	}
      	//created function for variables
+     	function result(){
+     		var resultText = document.getElementById("result");
+     		var allergyPercent=allergy_count/4*100;
+     		var coldPercent=cold_count/4*100;
+     		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
+     	}//function calculates the allergy and cold percentage
      	
+     	function resetVars(){
+     		allergy_count=0;
+     		cold_count=0;
+     	}//resets the variables so the use can take the quiz again
+     
      </script>
     
   </head>
@@ -146,10 +157,10 @@ blah, blah, blah, blah
 	
 	<div data-role="content">
 		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#results" onclick="allergyAdd();"data-role="button">Yes</a>
-		<a href="#results" onclick="coldAdd();"data-role="button">No</a>
+		<a href="#pageresults" onclick="allergyAdd();"data-role="button">Yes</a>
+		<a href="#pageresults" onclick="coldAdd();"data-role="button">No</a>
 			<!-- /question on page 5 sent to results page -->
-		<a href="#results">Go to Results</a></a>
+		<a href="#pageresults">Go to Results</a></a>
 			<!-- /answer on page 5 sent to results page -->
 	</div><!-- /content -->
 	
@@ -160,23 +171,19 @@ blah, blah, blah, blah
 
 
 
-	<div data-role="page" id="results">
+	<div data-role="page" id="pageresults">
 		
 	<div data-role="header">
 		<h1>Results</h1>
 	</div><!-- /header -->
 	
-	<p id="results"></p>
-			<!--/declaring the page -->
-		<script>
-			resultText.innerHTML="Probability it is allergies = " + allergyPercent + "<br>Probability it is a cold = "+ coldPercent;
-			//will hopefully get the results and then print it by changing the HTML Content
-		</script>
 	
 	<div data-role="content">
-		
-		var resultsText=document.getElementByld("results");
-			<!-- /get overall results -->
+		<a href="#result" onclick="result();" data-role="button">Click to show results</a>
+		<p id="result"></p>
+		<p>Thanks for using the app!</p>
+		<a href="#pageone" onclick="resetVars();" data-role="button">Take Again</a><!-- button allows them to take the quiz again, starting the variables cold and allergy over again -->
+	</div><!-- /content -->	
 			
 	<div data-role="footer" data-position="fixed">
 		<p>Page 6</p>
