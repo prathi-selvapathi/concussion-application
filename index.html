@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Molly Aldred
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+The following code goes through a series of questions in which it tries to diagnose if someone has a cold or allergy.
  
 Known Issues:
-blah, blah, blah, blah
+No known issues besides the app takes FOREVER to update.
 -->
 
    <head> 
@@ -40,23 +40,23 @@ blah, blah, blah, blah
      	
      	function allergyAdd(){
      		allergy_count=allergy_count+1;
-     	}
+     	}//adds a count to the allergy as the user picks allergy option
      	
      	function coldAdd(){
      		cold_count=cold_count+1;
-     	}
+     	}//adds a count to the cold when the use picks cold option
      	//created function for variables
      	function result(){
      		var resultText = document.getElementById("result");
      		var allergyPercent=allergy_count/6*100;
      		var coldPercent=cold_count/6*100;
      		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
-     	}//function calculates the allergy and cold percentage
+     	}//function calculates the allergy and cold percentage by dividing by the total questions and multiplying by 100
      	
      	function resetVars(){
      		allergy_count=0;
      		cold_count=0;
-     	}//resets the variables so the use can take the quiz again
+     	}//resets the variables to 0 so the use can take the quiz again
      
      </script>
     
@@ -217,14 +217,14 @@ blah, blah, blah, blah
 		<p id="result"></p>
 		<p>Thanks for using the app!</p>
 		<a href="#pageone" onclick="resetVars();" data-role="button">Take Again</a><!-- button allows them to take the quiz again, starting the variables cold and allergy over again -->
-	</div><!-- /content that gets and progects the results by calling result function -->	
+	</div><!-- /content that gets results from the top of code (java scripte section) and projects the results by calling result function at the top; button to take the quiz again-->	
 			
 	<div data-role="footer" data-position="fixed">
 		<p>Page 8</p>
 	</div><!-- /footer -->
-		<!-- /using page 6 as a way to end the code because I didn't know what to do with the answers send from page 5 to 6 -->
+	
 	</div><!--/ end of results page -->
 	
-    </div><!-- /page -->
+    </div><!-- /page --> <!--end of code...it all works!--> 
   </body>
 </html>
