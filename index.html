@@ -47,7 +47,7 @@ Known Issues:
 	</div><!-- /header -->
 	
 	<div data-role="content">	
-		<p>This app will help diagnose concussions based on pre-test and post-test results, historical test results, and neurological test results. Clik below to start the conussion test.</p>
+		<p>This app will help diagnose concussions based on pre-test and post-test results, historical test results, and neurological test results. Click below to start the conussion test.</p>
 			<!--/letting the use know what they are about to do -->
 		<a href="#pagetwo" data-role="button">Start the test</a>	
 			<!--created a button to take them to page 2-->
@@ -88,127 +88,12 @@ Known Issues:
 	<div data-role="footer" data-position="fixed">
 		<p>Page 2</p>
 	</div><!-- /footer -->
-	</div><!--/ end of page 2 -->
+	
+     </div><!--/ end of page 2 -->
 	
 	
 	
-      <div data-role="page" id="pagethree">
-	<div data-role="header">
-		<h1>Question 2</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<p>Do you have a fever?</p>
-		<a href="#pagefour" onclick="coldAdd();"data-role="button">Yes</a>
-		<a href="#pagefour" onclick="allergyAdd();"data-role="button">No</a>
-			<!-- /question on page 3 sent to page 4 -->
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>Page 3</p>
-	</div><!-- /footer -->
-	</div><!--/ end of page 3 -->
-	
-	
-	
-      <div data-role="page" id="pagefour">
-	<div data-role="header">
-		<h1>Question 3</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<p>Do you have a sore throat?</p>
-		<a href="#pagefive" onclick="coldAdd();"data-role="button">Yes</a>
-		<a href="#pagefive" onclick="allergyAdd();"data-role="button">No</a>
-			<!-- /question on page 4 sent to page 5 -->
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>Page 4</p>
-	</div><!-- /footer -->
-	</div><!--/ end of page 4 -->
-	
-	
-	
-     <div data-role="page" id="pagefive">
-	<div data-role="header">
-		<h1>Question 4</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<p>Are your symptoms seasonal or chronic?</p>
-		<a href="#pagesix" onclick="allergyAdd();"data-role="button">Yes</a>
-		<a href="#pagesix" onclick="coldAdd();"data-role="button">No</a>
-			<!-- /question on page 5 sent to page 6 -->
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>Page 5</p>
-	</div><!-- /footer -->
-	</div><!--/ end of page 5 -->
-	
-	
-
-	<div data-role="page" id="pagesix">
-	<div data-role="header">
-		<h1>Question 5</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<p>Are you achey?</p>
-		<a href="#pageseven" onclick="coldAdd();"data-role="button">Yes</a>
-		<a href="#pageseven" onclick="allergyAdd();"data-role="button">No</a>
-			<!-- /question on page 6 sent to page 7-->
-		
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>Page 6</p>
-	</div><!-- /footer -->
-	</div><!--/ end of page 6 -->
-	
-	
-	<div data-role="page" id="pageseven">
-	<div data-role="header">
-		<h1>Question 6</h1>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<p>Is your nasal discharge clear?</p>
-		<a href="#pageresults" onclick="allergyAdd();"data-role="button">Yes</a>
-		<a href="#pageresults" onclick="coldAdd();"data-role="button">No</a>
-			<!-- /question on page 7 sent to results page -->
-	
-	</div><!-- /content -->
-	
-	<div data-role="footer" data-position="fixed">
-		<p>Page 7</p>
-	</div><!-- /footer -->
-	</div><!--/ end of page 7 -->
-	
-
-	<div data-role="page" id="pageresults">
-		
-	<div data-role="header">
-		<h1>Results</h1>
-	</div><!-- /header -->
-	
-	
-	<div data-role="content">
-		<a href="#result" onclick="result();" data-role="button">Click to show results</a>
-		<p id="result"></p>
-		<p>Thanks for using the app!</p>
-		<a href="#pageone" onclick="resetVars();" data-role="button">Take Again</a><!-- button allows them to take the quiz again, starting the variables cold and allergy over again -->
-	</div><!-- /content that gets results from the top of code (java scripte section) and projects the results by calling result function at the top; button to take the quiz again-->	
-			
-	<div data-role="footer" data-position="fixed">
-		<p>Page 8</p>
-	</div><!-- /footer -->
-	
-	</div><!--/ end of results page -->
+    
 	
     </div><!-- /page --> <!--end of code...it all works!--> 
   </body>
