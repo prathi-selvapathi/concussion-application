@@ -6,7 +6,6 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
  
 Authors in chronological order of contribution:
-Tim Riedel
 Molly Aldred
  
 Further Information:
@@ -17,14 +16,14 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-The following code goes through a series of questions in which it tries to diagnose if someone has a cold or allergy.
+The following code goes through a series of questions in which it tries to diagnose if someone has a concussion.
  
 Known Issues:
-No known issues besides the app takes FOREVER to update.
+
 -->
 
    <head> 
-      <title>Hello World</title>  
+      <title>Concussion Diagnositc Test</title>  
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="apple-mobile-web-app-capable" content="yes">
       <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
@@ -34,48 +33,24 @@ No known issues besides the app takes FOREVER to update.
       
    
      <script>
-     	var allergy_count=0;
-     	var cold_count=0;
-     	//Declared and initialized variables
-     	
-     	function allergyAdd(){
-     		allergy_count=allergy_count+1;
-     	}//adds a count to the allergy as the user picks allergy option
-     	
-     	function coldAdd(){
-     		cold_count=cold_count+1;
-     	}//adds a count to the cold when the use picks cold option
-     	//created function for variables
-     	function result(){
-     		var resultText = document.getElementById("result");
-     		var allergyPercent=allergy_count/6*100;
-     		var coldPercent=cold_count/6*100;
-     		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
-     	}//function calculates the allergy and cold percentage by dividing by the total questions and multiplying by 100
-     	
-     	function resetVars(){
-     		allergy_count=0;
-     		cold_count=0;
-     	}//resets the variables to 0 so the use can take the quiz again
      
+     /*put fuctions in here/*
      </script>
     
   </head>
  
   <body>
 
-
-
     <div data-role="page" id="pageone">
 	<div data-role="header">
-		<h1>Cold vs. Allergy Survey</h1>
+		<h1>Concussion Diagnostic Test</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">	
-		<p>Start the Cold vs. Allergy Survey!</p>
+		<p>This app will help diagnose concussions based on pre-test and post-test results, historical test results, and neurological test results. Clik below to start the conussion test.</p>
 			<!--/letting the use know what they are about to do -->
-		<a href="#pagetwo" data-role="button">Start the Quiz!</a>	
-			<!--created a button to take them to the first question on page 2-->
+		<a href="#pagetwo" data-role="button">Start the test</a>	
+			<!--created a button to take them to page 2-->
 	</div><!-- /content -->
 	
 	<div data-role="footer" data-position="fixed">
@@ -87,16 +62,26 @@ No known issues besides the app takes FOREVER to update.
 		
      <div data-role="page" id="pagetwo">
 	<div data-role="header">
-		<h1>Question 1</h1>
+		<h1>RED FLAG</h1>
 	</div><!-- /header -->
 	
 	<div data-role="content">		
 			
-		<p>Are your eyes watery or itchy?</p>
-			<!--/asking first question -->
-		<a href="#pagethree" onclick="allergyAdd();"data-role="button">Yes</a>
-		<a href="#pagethree" onclick="coldAdd();"data-role="button">No</a>
-			<!-- /question on page two sent to page three -->
+		<p>If you are exibiting any of the following symtoms, seek medical attention immediately:</p>
+		<p>-Headaches that worsen</p>
+		<p>-Seizures</p>
+		<p>-Focal neurological signs</p>
+		<p>-Drowsy and/or cannot wake up</p>
+		<p>-Repeated vomiting</p>
+		<p>-Slurred speech</p>
+		<p>-Cannot recognize people or places</p>
+		<p>-Increasing confusion or irritability</p>
+		<p>-Weakness or numbness in arms/legs</p>
+		<p>-Neck pain</p>
+		<p>-Unusual behavioral change</p>
+		<p>-Change in state of consciousness</p>
+	
+			<!--/ red flag disclaimers in list form -->
 		
 	</div><!-- /content -->
 	
