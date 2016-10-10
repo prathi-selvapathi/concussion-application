@@ -51,8 +51,8 @@ Not different pages
 	
 		<div data-role="content">	
 		
-			<p>This app will help diagnose concussions based on pre-test and post-test results, historical test results, and neurological test results.</p>
-			<p>Click below to start the conussion test.</p>
+			<p>This test will help diagnose whether you have a concussion. Although it does not replace seeing a physician, it can assess signs on brain injury. If you are experiencing or have experienced losing consciousness, inability to awaken, seizures, numbness, or confusion at any point after your injury, call 911 or go to your closest emergency room immediately.</p>
+			<p>Below is the link to the CDC concussion test. If you have taken the test before, log your score and retake the test after injury. After, take the rest of this quiz. If you have not taken the CDC concussion test, leave the pre and post scores blank and continue to take the quiz on this app.</p>
 				<!--/letting the use know what they are about to do -->
 			<a href="#pagetwo" data-role="button">Start the test</a>	
 				<!--created a button to take them to page 2-->
@@ -65,109 +65,58 @@ Not different pages
 			
 			
 		
+	
+
 	<div data-role="page" id="pagetwo">
 		<div data-role="header">
-			<h1>RED FLAGS</h1>
-		</div><!-- /header -->
-
-		<div data-role="content">		
-			<p>A concussion is a type of brain injury typically caused by a traumatic bump or blow to the head. Brain injuries are serious and can result in permanent damage if not taken care of properly.</p>
-			<p>
-				<!--/trying to skip a line-->
-			<p>If you are exibiting any of the following symptoms, seek medical attention immediately:</p>
-			<p>-Headaches that worsen</p>
-			<p>-Seizures</p>
-			<p>-Focal neurological signs</p>
-			<p>-Drowsy and/or cannot wake up</p>
-			<p>-Repeated vomiting</p>
-			<p>-Slurred speech</p>
-			<p>-Cannot recognize people or places</p>
-			<p>-Increasing confusion or irritability</p>
-			<p>-Weakness or numbness in arms/legs</p>
-			<p>-Neck pain</p>
-			<p>-Unusual behavioral change</p>
-			<p>-Change in state of consciousness</p>
-		
-				<!--/ red flag disclaimers in list form -->
-				
-			<a href="#pageone" data-role="button">Back to page 1</a>	
-				<!--created a button to take them back to page 1-->
-			<a href="#pagethree" data-role="button">To page 3</a>	
-				<!--created a button to take them back to page 1-->
-		</div><!-- /content -->
-
-		<div data-role="footer" data-position="fixed">
-			<p>Page 2</p>
-		</div><!-- /footer -->
-	
-	</div><!--/ end of page 2 -->
-	
-
-	<div data-role="page" id="pagethree">
-		<div data-role="header">
-			<h1>Historical Questions</h1>
+			<h1>Injury Characteristics</h1>
 		</div><!-- /header -->
 	
 		<div data-role="content">
 					
-			<p>Questions here</p>
 			
-			<p class="question">1. Is there evidence of a forcible blow to your head (direct or indirect)?</p>
+			<p class="question">1. Are you/have you been unconscious, confused, unable to wake up, or seizing at any point?</p>
 				<!--/ Question 1 --> 
 			<ul class="answers">
 			<input type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
 			<input type="radio"name="q1"value="b"id="q1b"><label for="q1b">No</label><br/>
-			<input type="radio"name="q1"value="c"id="q1c"><label for="q1c">I don't know</label><br/>
 				<!--Answers to question 1 -->
 			</ul><!--end of question 1 -->
 				
-		
-			<p class="question">2. Do you have intercranial injury or skull fracture?</p>
+			
+			<p class="question">2. How did you obtain your head injury?</p>
 				<!--/ Question 2 --> 
 			<ul class="answers">
-			<input type="radio"name="q2"value="a"id="q2a"><label for="q2a">Yes</label><br/>
-			<input type="radio"name="q2"value="b"id="q2b"><label for="q2b">No</label><br/>
-			<input type="radio"name="q2"value="c"id="q2c"><label for="q2c">I don't know</label><br/>
+			<input type="radio"name="q2"value="a"id="q2a"><label for="q2a">Motor Vehicle Crash (MVC)</label><br/>
+			<input type="radio"name="q2"value="b"id="q2b"><label for="q2b">Pedestrian collision with a motor vehicle</label><br/>
+			<input type="radio"name="q2"value="c"id="q2c"><label for="q2c">Fall</label><br/>
+			<input type="radio"name="q2"value="d"id="q2d"><label for="q2d">Assault</label><br/>
+			<input type="radio"name="q2"value="e"id="q2e"><label for="q2e">Sports</label><br/>
+			<input type="radio"name="q2"value="f"id="q2f"><label for="q2f">Other</label><br/>
 				<!--Answers to question 2 -->
 			</ul><!--end of question 2 -->
-			
-			<p class="question">3. Where on your head was hit?</p>
-				<!--/ Question 3 --> 
+		
+			<p class="question">3. Are there any events just BEFORE the injury that you have no memory of, even briefly?</p>
+				<!--/ Question 5 --> 
 			<ul class="answers">
-			<input type="radio"name="q3"value="a"id="q3a"><label for="q3a">Front</label><br/>
-			<input type="radio"name="q3"value="b"id="q3b"><label for="q3b">Left Side</label><br/>
-			<input type="radio"name="q3"value="c"id="q3c"><label for="q3c">Right Side</label><br/>
-			<input type="radio"name="q3"value="d"id="q3d"><label for="q3d">Back</label><br/>
-			<input type="radio"name="q3"value="e"id="q3e"><label for="q3e">Neck</label><br/>
-			<input type="radio"name="q3"value="f"id="q3f"><label for="q3f">Indirect Force</label><br/>
+			<input type="radio"name="q3"value="a"id="q3a"><label for="q3a">Yes</label><br/>
+			<input type="radio"name="q3"value="b"id="q3b"><label for="q3b">No</label><br/>
 				<!--Answers to question 3 -->
 			</ul><!--end of question 3 -->
 			
-			<p class="question">4. What caused your head injury?</p>
+			<p class="question">4. Are there any events just AFTER the injury that you have no memory of, even briefly?</p>
 				<!--/ Question 4 --> 
 			<ul class="answers">
-			<input type="radio"name="q4"value="a"id="q4a"><label for="q4a">Motor Vehicle Crash (MVC)</label><br/>
-			<input type="radio"name="q4"value="b"id="q4b"><label for="q4b">Pedestrian - MVC</label><br/>
-			<input type="radio"name="q4"value="c"id="q4c"><label for="q4c">Fall</label><br/>
-			<input type="radio"name="q4"value="d"id="q4d"><label for="q4d">Assault</label><br/>
-			<input type="radio"name="q4"value="e"id="q4e"><label for="q4e">Sports</label><br/>
-			<input type="radio"name="q4"value="f"id="q4f"><label for="q4f">Other</label><br/>
+			<input type="radio"name="q4"value="a"id="q4a"><label for="q4a">Yes</label><br/>
+			<input type="radio"name="q4"value="b"id="q4b"><label for="q4b">No</label><br/>
 				<!--Answers to question 4 -->
 			</ul><!--end of question 4 -->
-		
-			<p class="question">5. Are there any events just BEFORE the injury that you have no memory of, even briefly?</p>
-				<!--/ Question 5 --> 
-			<ul class="answers">
-			<input type="radio"name="q5"value="a"id="q5a"><label for="q5a">Yes</label><br/>
-			<input type="radio"name="q5"value="b"id="q5b"><label for="q5b">No</label><br/>
-				<!--Answers to question 5 -->
-			</ul><!--end of question 5 -->
 		
 		
 		
 			<a href="#pageone" data-role="button">Back to page 1</a>	
 				<!--created a button to take them back to page 1-->
-			<a href="#pagefour" data-role="button">To page 4</a>	
+			<a href="#pagethree" data-role="button">To page 3</a>	
 				<!--created a button to take them back to page 1-->
 		</div><!-- /content -->
 	
@@ -177,9 +126,11 @@ Not different pages
 		
 	     </div><!--/ end of page 2 -->	
 	     
-	<div data-role="page" id="pagefour">
+	  
+	  
+	<div data-role="page" id="pagethree">
 		<div data-role="header">
-			<h1>Neurological Test</h1>
+			<h1>Symtpoms</h1>
 		</div><!-- /header -->
 	
 		<div data-role="content">
@@ -193,7 +144,7 @@ Not different pages
 		</div><!-- /content -->
 	
 		<div data-role="footer" data-position="fixed">
-			<p>Page 4</p>
+			<p>Page 3</p>
 		</div><!-- /footer -->
 		
 	     </div><!--/ end of page 2 -->	
