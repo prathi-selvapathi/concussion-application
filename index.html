@@ -34,12 +34,20 @@ Not different pages
 
      <script>
 	     
-     var count = 0;
+	var count = 0;
 	     
-     function cAdd(){
-	 count = count + 1;    
-     }
+	function cAdd(){
+		count = count + 1;    
+     	}
 	     
+	function result(){
+		var resultText = document.getElementById("result");
+		resultText.innerHTML="Your concussion count is " + count + ".";
+	}
+	  
+	 function resetVars(){
+		count = 0; 
+	 }
      </script>
    
     
@@ -83,7 +91,7 @@ Not different pages
 			<p class="question">1. Are you/have you been unconscious, confused, unable to wake up, or seizing at any point?</p>
 				<!--/ Question 1 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
+			<input onclick="cAdd();" type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
 			<input type="radio"name="q1"value="b"id="q1b"><label for="q1b">No</label><br/>
 				<!--Answers to question 1 -->
 			</ul><!--end of question 1 -->
@@ -104,7 +112,7 @@ Not different pages
 			<p class="question">3. Are there any events just BEFORE the injury that you have no memory of, even briefly?</p>
 				<!--/ Question 5 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q3"value="a"id="q3a"><label for="q3a">Yes</label><br/>
+			<input onclick="cAdd();" type="radio"name="q3"value="a"id="q3a"><label for="q3a">Yes</label><br/>
 			<input type="radio"name="q3"value="b"id="q3b"><label for="q3b">No</label><br/>
 				<!--Answers to question 3 -->
 			</ul><!--end of question 3 -->
@@ -112,7 +120,7 @@ Not different pages
 			<p class="question">4. Are there any events just AFTER the injury that you have no memory of, even briefly?</p>
 				<!--/ Question 4 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q4"value="a"id="q4a"><label for="q4a">Yes</label><br/>
+			<input onclick="cAdd();" type="radio"name="q4"value="a"id="q4a"><label for="q4a">Yes</label><br/>
 			<input type="radio"name="q4"value="b"id="q4b"><label for="q4b">No</label><br/>
 				<!--Answers to question 4 -->
 			</ul><!--end of question 4 -->
@@ -143,26 +151,26 @@ Not different pages
 			<p class="question">5. Check the following symptoms you are experiencing:</p>
 				<!--/ Question 5 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q5"value="a"id="q5a"><label for="q5a">Headache</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="b"id="q5b"><label for="q5b">Nausea</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="c"id="q5c"><label for="q5c">Vomiting</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="d"id="q5d"><label for="q5d">Struggle to balance</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="e"id="q5e"><label for="q5e">Dizziness</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="f"id="q5f"><label for="q5f">Visual problems</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="g"id="q5g"><label for="q5g">Fatigue</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="h"id="q5h"><label for="q5h">Sensitivity to light or noise</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="i"id="q5i"><label for="q5i">Numbness of tingling</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="j"id="q5j"><label for="q5j">Difficulty concentrating</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="k"id="q5k"><label for="q5k">Difficulty remembering</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="l"id="q5l"><label for="q5l">Irritability or depression</label><br/>
-			<input onClick="cAdd()" type="radio"name="q5"value="m"id="q5m"><label for="q5m">Drowsy</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="a"id="q5a"><label for="q5a">Headache</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="b"id="q5b"><label for="q5b">Nausea</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="c"id="q5c"><label for="q5c">Vomiting</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="d"id="q5d"><label for="q5d">Struggle to balance</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="e"id="q5e"><label for="q5e">Dizziness</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="f"id="q5f"><label for="q5f">Visual problems</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="g"id="q5g"><label for="q5g">Fatigue</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="h"id="q5h"><label for="q5h">Sensitivity to light or noise</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="i"id="q5i"><label for="q5i">Numbness of tingling</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="j"id="q5j"><label for="q5j">Difficulty concentrating</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="k"id="q5k"><label for="q5k">Difficulty remembering</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="l"id="q5l"><label for="q5l">Irritability or depression</label><br/>
+			<input onclick="cAdd();" type="radio"name="q5"value="m"id="q5m"><label for="q5m">Drowsy</label><br/>
 				<!--Answers to question 5 -->
 			</ul><!--end of question 5 -->	
 			
 			<p class="question">6. Do your symptoms worsen when you have increased mental activity or physical activity?</p>
 				<!--/ Question 6 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q6"value="a"id="q6a"><label for="q6a">Yes</label><br/>
+			<input onclick="cAdd();" type="radio"name="q6"value="a"id="q6a"><label for="q6a">Yes</label><br/>
 			<input type="radio"name="q6"value="b"id="q6b"><label for="q6b">No</label><br/>
 				<!--Answers to question 6 -->
 			</ul><!--end of question 6 -->
@@ -170,7 +178,7 @@ Not different pages
 			<p class="question">7. Have you had a concussion or a serious head injury before?</p>
 				<!--/ Question 7 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q7"value="a"id="q7a"><label for="q7a">Yes</label><br/>
+			<input onclick="cAdd();" type="radio"name="q7"value="a"id="q7a"><label for="q7a">Yes</label><br/>
 			<input type="radio"name="q7"value="b"id="q7b"><label for="q7b">No</label><br/>
 				<!--Answers to question 7 -->
 			</ul><!--end of question 7 -->
@@ -202,10 +210,10 @@ Not different pages
 			<p class="question">8. Please attempt the following activities. Check tasks that you experience balance problems or difficulties:</p>
 				<!--/ Question 8 --> 
 			<ul class="answers">
-			<input onClick="cAdd()" type="radio"name="q8"value="a"id="q8a"><label for="q8a">Walk 5 steps forward on you tiptoes and 5 steps backwards on your heels</label><br/>
-			<input onClick="cAdd()" type="radio"name="q8"value="b"id="q8b"><label for="q8b">Stand up and close your eyes</label><br/>
-			<input onClick="cAdd()" type="radio"name="q8"value="c"id="q8c"><label for="q8c">Close your eyes and touch your right finger to your nose</label><br/>
-			<input onClick="cAdd()" type="radio"name="q8"value="d"id="q8d"><label for="q8d">Closer your eyes and touch your left finger to your nose</label><br/>
+			<input onclick="cAdd()" type="radio"name="q8"value="a"id="q8a"><label for="q8a">Walk 5 steps forward on you tiptoes and 5 steps backwards on your heels</label><br/>
+			<input onclick="cAdd()" type="radio"name="q8"value="b"id="q8b"><label for="q8b">Stand up and close your eyes</label><br/>
+			<input onclick="cAdd()" type="radio"name="q8"value="c"id="q8c"><label for="q8c">Close your eyes and touch your right finger to your nose</label><br/>
+			<input onclick="cAdd()" type="radio"name="q8"value="d"id="q8d"><label for="q8d">Closer your eyes and touch your left finger to your nose</label><br/>
 				<!--Answers to question 8 -->
 			</ul><!--end of question 8 -->	
 			
@@ -232,11 +240,14 @@ Not different pages
 		<div data-role="content">
 			<p> Click the button below to see your results.</p>	
 			
+			<a href="#result" onclick="result();" data-role="button">Results</a>
+			<p id="result"></p>
+			<p>Thanks for using the app!</p>
 			
 
 			
 			
-			<a href="#pageone" data-role="button">To Page 1</a>	
+			<a href="#pageone" onclick="resetVars();" data-role="button">Take Again</a>	
 				<!--created a button to take them back to page 1-->
 		
 		</div><!-- /content -->
