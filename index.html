@@ -328,8 +328,40 @@ Not different pages
 	  
 	  
 	  
+	    <div data-role="page" id="pagefive">
+		<div data-role="header">
+			<h1>Sleep Section</h1>
+		</div><!-- /header -->
+	
+		<div data-role="content">
+					
+			<p class="question">23. Do you sleep more than usual? </p>
+				<!--/ Question 23 --> 
+			<ul class="answers">
+			<input onclick="cAdd();" type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
+			<input type="radio"name="q1"value="b"id="q1b"><label for="q1b">No</label><br/>
+			<input type="radio"name="q1"value="b"id="q1b"><label for="q1b">Skip</label><br/>
+				<!--Answers to question 23 -->
+			</ul><!--end of question 23 -->
+			
+
+			
+			
+			<a href="#pageone" onclick="resetVars();" data-role="button">Take Again</a>	
+				<!--created a button to take them back to page 6-->
+		
+		</div><!-- /content -->
+	
+		<div data-role="footer" data-position="fixed">
+			<p>Page 5</p>
+		</div><!-- /footer -->
+		
+	     </div><!--/ end of page 5 -->
 	  
-	  <div data-role="page" id="pagefive">
+	  
+	  
+	  
+	  <div data-role="page" id="pagesix">
 		<div data-role="header">
 			<h1>Results</h1>
 		</div><!-- /header -->
@@ -350,10 +382,10 @@ Not different pages
 		</div><!-- /content -->
 	
 		<div data-role="footer" data-position="fixed">
-			<p>Page 5</p>
+			<p>Page 6</p>
 		</div><!-- /footer -->
 		
-	     </div><!--/ end of page 5 -->
+	     </div><!--/ end of page 6 -->
 	  
 	
     
