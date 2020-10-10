@@ -19,66 +19,91 @@ Brief Description of Goal of Code:
 The following code goes through a series of questions in which it tries to diagnose if someone has a concussion.
  
 Known Issues:
-Not different pages
+
 -->
 
-   <head> 
-      <title>Concussion Diagnositc Test</title>  
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="apple-mobile-web-app-capable" content="yes">
-      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-      <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<head> 
+	      <title>Concussion Diagnostic</title>
+		<h1 style="font-family:arial;">This is a heading</h1>
+		<p style="font-family:courier;">This is a paragraph.</p>
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <meta name="apple-mobile-web-app-capable" content="yes">
+	      <link rel="stylesheet" href="w3.css">
+	      <link rel="stylesheet" href="w3-colors-flat.css">
+	   </head> 
       
       
 
-     <script>
+	<script>
 	     
-	var count = 0;
+		var count = 0;
 	     
-	function cAdd(){
+		function cAdd(){
 		count = count + 1;    
-     	}
+     		}
 	     
-	function result(){
-		var resultText = document.getElementById("result");
-		resultText.innerHTML="Your concussion count is " + count  + " out of 22.";
-	}
+		function result(){
+			var resultText = document.getElementById("result");
+			resultText.innerHTML="Your concussion count is " + count  + " out of 22.";
+		}
 	  
-	 function resetVars(){
-		count = 0; 
-	 }
-     </script>
-   
-    
-  </head>
- 
- 
- 
-  <body>
+	 	function resetVars(){
+			count = 0; 
+		 }
+	</script>
 
-	<div data-role="page" id="pageone">
-		<div data-role="header">
-			<h1>Concussion Diagnostic Test</h1>
-		</div><!-- /header -->
 	
-		<div data-role="content">	
+	
+	<style>	
+	.body {
+		margin: 0em;
+		background-color: #e6e6ff;
+	}
+	
+
+	.page {
+	    width: 100vw;
+	    height: 100vh;
+	    position: fixed;
+	    top: 0;
+	    left: -100vw;
+	    overflow-y: auto;
+	    z-index: 0;
+	    background-color: hsl(0,0%,100%);
+	}
+	
+
+	  .page:target {
+	    left: 0vw;
+	    z-index: 1;
+	}
+	</style>
+ 
 		
-			<p>This test will help determine whether you have a concussion. Although it does not replace seeing a physician, it can assess signs on brain injury. If you are experiencing or have experienced losing consciousness, inability to awaken, seizures, numbness, or confusion at any point after your injury, call 911 or go to your closest emergency room immediately.</p>
-			<p>DISCLAIMER: DO NOT USE THIS APP TO DIAGNOSE A CONCUSSION</p>	
-			<p>How To Use:</p>
-				<li>Best to be evaluated by another person: Ask the questions to the patient and log answers appropriately</li>
-				<li>If answering for yourself, answer truthfully to the best of your ability</li>	
-			<!--/letting the use know what they are about to do -->
-			
-			<a href="#pagetwo" data-role="button">Start the test</a>	
-				<!--created a button to take them to page 2-->
-		</div><!-- /content -->
+		 
+		 
+	<body>
+	<div id="header" class="w3-container w3-flat-carrot">
+		<h1>Concussion Assessment</h1>
+	</div>
+		
+	<div id="content" class="w3-container">
+		<p>Welcome! This test will help determine whether you have a concussion. Although it does not replace seeing a physician, it can assess signs on brain injury. If you are experiencing or have experienced losing consciousness, inability to awaken, seizures, numbness, or confusion at any point after your injury, call 911 or go to your closest emergency room immediately.</p>
+	</p>
+		<p>D</p>	
+		
+		<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+		
+		<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
+	 	
+		<p>DISCLAIMER: THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-		<div data-role="footer" data-position="fixed">
-			<p>Page 1</p>
-		</div><!-- /footer -->
-	</div><!--/ end of page 1 -->
+		<h2>HTML Image</h2>
+<img src="insert image link">
+
+			
+			
+			
 			
 			
 		
