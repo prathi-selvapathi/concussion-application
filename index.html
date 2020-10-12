@@ -48,24 +48,52 @@ Not different pages
 		count = 0; 
 	 }
      </script>
-   
-    
-  </head>
- 
-  <body>
-
-	<div data-role="page" id="pageone">
-		<div data-role="header">
-			<h1>Concussion Diagnostic Test</h1>
-		</div><!-- /header -->
 	
-		<div data-role="content">	
+<!-- This produces the footer and the header. This also codes for the formatting of the page. It is coded with <style> for formatting-->
+
+<style>	
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
+
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+</style>
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
+
+<body>
+<div id="header" class="w3-container w3-flat-carrot">
+	<h1>Concussion Diagnostic Test</h1>
+</div>
+	
+<!-- This produces the intro statement on the "home page" of the website -->	
+
+<div id="content" class="w3-container">
 		
-			<p>This test will help determine whether you have a concussion. Although it does not replace seeing a physician, it can assess signs on brain injury. If you are experiencing or have experienced losing consciousness, inability to awaken, seizures, numbness, or confusion at any point after your injury, call 911 or go to your closest emergency room immediately.</p>
-			<p>DISCLAIMER: DO NOT USE THIS APP TO DIAGNOSE A CONCUSSION</p>	
-			<p>How To Use:</p>
-				<li>Best to be evaluated by another person: Ask the questions to the patient and log answers appropriately</li>
-				<li>If answering for yourself, answer truthfully to the best of your ability</li>	
+		<p>This test will help determine whether you have a concussion. Although it does not replace seeing a physician, it can assess signs on brain injury. If you are experiencing or have experienced losing consciousness, inability to awaken, seizures, numbness, or confusion at any point after your injury, call 911 or go to your closest emergency room immediately.</p>
+		<p>DISCLAIMER: DO NOT USE THIS APP TO DIAGNOSE A CONCUSSION</p>	
+		<p>How To Use:</p>
+			<li>Best to be evaluated by another person: Ask the questions to the patient and log answers appropriately</li>
+			<li>If answering for yourself, answer truthfully to the best of your ability</li>	
 			<!--/letting the use know what they are about to do -->
 			
 			<a href="#pagetwo" data-role="button">Start the test</a>	
@@ -76,10 +104,39 @@ Not different pages
 			<p>Page 1</p>
 		</div><!-- /footer -->
 	</div><!--/ end of page 1 -->
-			
-			
-		
+
+<!-- This produces the new page for question 1 and the footer. It is coded with <style> for formatting -->
+<div>
+<style>	
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY</p>
+</footer>
+
+.body {
+     margin: 0em;
+}
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    overflow-y: auto;
+    z-index: 0;
+    background-color: hsl(0,0%,100%);
+}
+
+  .page:target {
+    left: 0vw;
+    z-index: 1;
+}
+</style>
+<footer class="w3-bottom w3-container w3-flat-carrot">
+	<p>DIY!</p>
+</footer>
 	
+<!-- This produces the question for question 1 and the buttons. w3-btn w3-black makes it a black button. onclick="fluAdd() adds one count to your flu count if you click on yes, and onclick="coldAdd() adds one count to your cold count if you click on no. -->
 
 	<div data-role="page" id="pagetwo">
 		<div data-role="header">
